@@ -1,0 +1,590 @@
+<!--Write the html code here -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* box-sizing: inherit; */
+      }
+
+      /* html {
+        font-size: 62.5%;
+        box-sizing: border-box;
+      } */
+      body {
+        background-color: #fff;
+      }
+
+      .header {
+        padding: 0 25rem 10rem 0;
+        display: block;
+        margin: 0 0;
+        height: 100vh;
+        width: 100%;
+        /* width: 120rem; */
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .nav__logo {
+        height: 4.5rem;
+        float: left;
+        margin-left: -60px;
+      }
+      nav {
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 9rem;
+        width: 90%;
+        padding: 0 6rem;
+        /*z-index: 100; */
+      }
+
+      nav a {
+        color: #fff;
+        text-decoration: none;
+        margin: 1%;
+        padding: 0.5% 3.5% 0.5% 3.5%;
+        font-size: 17px;
+      }
+
+      .logobakery,
+      .services,
+      .projects,
+      .life {
+        float: left;
+        padding: 0 0 3px;
+      }
+
+      .about {
+        float: right;
+        margin: 10px -100px 10px 0;
+      } 
+      .help {
+        float: right;
+        margin: 10px 90px 10px 0;
+
+      }
+
+      .donate {
+        float: right;
+        padding: 10px  10px 10px 10px; 
+        margin-right: 8px;
+        background-color: #FCAA6C;
+      }
+
+      .adopt {
+        float: right;
+        background-color: #F7B41B;
+        margin-right: 1px;
+        padding: 10px  10px 10px 10px; 
+      }
+
+      .header__img {
+        width: 102.9%;
+        height: 100vh;
+        margin: 0 0 0 0;
+      }
+
+      .header__title {
+
+        max-width: 100rem;
+         
+        position: absolute;
+        justify-content: center;
+        padding: 15rem 10rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        line-height: 0.6;
+        color: #fff;
+      }
+
+      .gsf_mission {
+        /* width: 97.5rem; */
+        width: 102.9%;
+        margin: 0 0 0 0;
+        padding: 0 0 80px;
+        background-color: rgb(195, 195, 195);
+      }
+
+      .myimages {
+        display: flex;
+        align-items: flex-end;
+        flex: 0 0 20px;
+        /*flex-grow, flex-shrink and flex-basis : 0 1 auto(default)*/
+        margin: 0 280px;
+        max-width: 100%;
+      }
+
+      h2 {
+         
+        font-size: 18px;
+        /* padding: 0 20px 20px; */
+        text-align:center;
+        margin-bottom: 25px;
+        padding: 22px;
+        
+      }
+
+      p {
+        text-align: center;
+        font-size: 19px;
+        margin-bottom: 25px;
+      }
+
+      span {
+        /* text-align: center; */
+        font-size: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+      }
+
+      .gsf__img1,
+      .gsf__img2,
+      .gsf__img3,
+      .gsf__img4,
+      .gsf__img5,
+      .gsf__img6 {
+        clip-path: circle();
+        flex: 0 0 40px;
+        margin: 30px 90px;
+      }
+
+      /* .gsf__img3 {
+        clip-path: circle();
+        flex: 0 0 40px;
+        padding: 30px 50px;
+      } */
+
+      h5 {
+        font-size: 22px;
+        margin: -20px -55px -20px -180px;
+      }
+
+      .gsf__header1 {
+        color: rgb(156, 58, 58);
+      }
+
+      .gsf__header2 {
+        color: rgb(233, 173, 53);
+      }
+
+      .gsf__header3 {
+        color: rgb(31, 87, 18);
+      }
+
+      .gsf__header4 {
+        color: rgb(64, 10, 32);
+      }
+
+      .gsf__header5 {
+        color: rgb(54, 70, 67);
+      }
+
+      .gsf__header6 {
+        color: rgb(27, 44, 73);
+      }
+
+      .gsf_images {
+        background-color: #fff;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch; 
+        margin: 20px 20px 20px;
+        border-radius: 28px;   
+      }
+
+      .card {
+        flex: 1 0 250px;
+        margin: 10px;
+      }
+
+      .card1 {
+        flex: 0 1;
+        margin: 20px 3px 3px 160px;
+      }
+
+      .card2 {
+        flex: 0 1;
+        margin: 20px 3px 3px;
+      }
+
+      .card3 {
+        flex: 0 0;
+        margin: 20px 3px 3px;
+      }
+
+       .card4 {
+        flex: 0 0;
+        margin: 3px 3px 3px 160px;
+       }
+
+      .card5 {
+        flex: 0 1;
+        margin: 3px 3px 3px;
+      }
+
+      .card6 {
+        flex: 0 1;
+        margin: 3px 20px 3px 3px;
+      }
+
+      .card7 {
+        flex: 0 0;
+        margin: 3px 3px 20px 160px;
+      }
+
+      .card8 {
+        flex: 0 0;
+        margin: 3px 20px 20px 3px;
+      }
+
+      h2 {
+        text-align: center;
+        text-decoration: underline overline solid #a6a6a6 2px;
+        
+      }
+
+      .turtles {
+        display: flex;
+      } 
+      .turtle { 
+        flex: 33.33%;   
+      }    
+
+     .card9 {
+      padding: 20px 3px 20px 180px;
+     }
+
+     .card10 { 
+      padding: 20px 20px 20px 3px
+     }
+
+      .footer {
+        display: block;
+        background-color: #000;
+        height: 35vh;
+        width: 100%;
+        position: relative;
+        padding: 60px 25px 70px 25px;
+
+      }
+
+      .footer p {
+        text-align: left;
+        color: #fff;
+        margin: 28px 10px 15px 20px;
+      }
+
+      .footer button {
+        float: right;
+        margin: -30px 82px 25px 5px;
+        background-color: rgb(190, 106, 27);  
+        color: #fff;
+        overflow: hidden;
+        font-size: 21px;
+        padding: 8px 16px;
+      }
+
+      hr {
+        height:2px;
+        border-width:0;
+        background-color:#f6feff;
+        width: 95%;
+      }
+
+      .footer2 {
+        background-color: rgb(255, 250, 250);
+        left: 0;
+        bottom: 0;
+      } 
+      
+      .footer__logo {
+        text-align: start;
+        margin: 15px 0 0 17px;
+        width: 105px;
+        height: 60px;
+
+      }
+
+      p.global {
+        text-align: start;
+        margin: -50px 0 0 150px;
+      }
+
+      p.street {
+        text-align: start;
+        margin: 5px 0 0 150px;
+      }
+
+      p.connect {
+        text-align: center;
+        margin: -90px 0 0 -250px;
+      }
+
+      .social {
+        display: inline-block;
+        padding: 20px 0 0 540px;
+      }
+
+      .footer__gsf {
+        text-align: right;
+        margin: -70px 0 0 120px;
+      }
+
+      .footer__link {
+        text-align: center;
+        margin: 50px 20px 30px 0;
+      }
+
+      .footer__link a {
+        text-decoration: none;
+        margin: 0 20px;
+      }
+
+      .footer__copyright {
+        font-size: 1rem;
+      }
+
+    </style>
+    <header>
+      <nav>
+        <img
+          src="./assets/deer.png"
+          alt="Deer logo2"
+          class="footer__logo"
+          id="logo2"
+          designer="Igor"
+          data-version-number="3.0"
+        />
+        <a class="logobakery" href="#">OUR WORK</a>
+        <a class="services" href="#">PEOPLE</a>
+        <a class="projects" href="#">PLACES</a>
+        <a class="life" href="#">WILD LIFE</a>
+        <a class="about" href="#">ABOUT</a>
+        <a class="help" href="#">HOW TO HELP</a>
+        <a class="donate" href="#">DONATE &#124 +</a>
+        <a class="adopt" href="#">ADOPT &#124 +</a>&nbsp;&nbsp; &nbsp;
+        <!-- <button>Contact</button> -->
+      </nav>
+      <div class="header__title">
+        <h1>CINCINNATI TAKES ON THE CLIMATE CRISIS</h1>
+      </div>
+      <img
+        src="./assets/people-together.jpg"
+        class="header__img"
+        alt="People together"
+      />
+    </header>
+  </head>
+  <body>
+    <section class="section" id="section--1">
+      <div class="gsf_mission">
+        <!-- <hr /> -->
+        <h2>GSF´S MISSION</h2>
+        <p>
+          Our mission is to conserve nature and reducethe most pressing threats
+          to the diversity of life on Earth.
+        </p>
+        <span>We organize our work around these six areas:</span>
+
+        <div class="myimages">
+          <img
+            src="./assets/goal-pillar-food.jpg"
+            class="gsf__img1"
+            alt="food"
+          />
+          <h5 class="gsf__header1">FOOD</h5>
+          <img
+            src="./assets/goal-pillar-climate.jpg"
+            class="gsf__img2"
+            alt="climate"
+          />
+          <h5 class="gsf__header2">CLIMATE</h5>
+          <img
+            src="./assets/goal-pillar-fresh-water.jpg"
+            class="gsf__img3"
+            alt="freshwater"
+          />
+          <h5 class="gsf__header3">FRESHWATER</h5>
+          <img
+            src="./assets/goal-pillar-climate.jpg"
+            class="gsf__img4"
+            alt="wildlife"
+          />
+          <h5 class="gsf__header4">WILDLIFE</h5>
+          <img
+            src="./assets/shop_to_support_trees1.jpg"
+            class="gsf__img5"
+            alt="forest"
+          />
+          <h5 class="gsf__header5">FOREST</h5>
+          <img
+            src="./assets/goal-pillar-oceans.jpg"
+            class="gsf__img6"
+            alt="ocean"
+          />
+          <h5 class="gsf__header6">OCEAN</h5>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="gsf_images">
+        <article class="card card1">
+          <img src="./assets/Polar_bear_travel.jpg" alt="Photo" />
+          <div class="text">
+          </div>
+        </article>
+
+        <article class="card card2">
+          <img src="./assets/Foxes.jpg" alt="Photo" />
+          <div class="text">
+          </div>
+        </article>
+
+        <article class="card card3">
+          <img src="./assets/PXL.jpg" alt="Photo" />
+          <div class="text">  
+          </div>
+        </article>
+
+        <article class="card card4">
+          <img src="./assets/binocs.jpg" alt="Photo" />
+          <div class="text">
+          </div>
+        </article>
+
+        <article class="card card5">
+          <img src="./assets/people.jpeg" alt="Photo" />
+          <div class="text">       
+          </div>
+        </article>
+
+        <article class="card card6">
+          <img src="./assets/sun-forest-people.jpg" alt="Photo" />
+          <div class="text">           
+          </div>
+        </article>
+
+        <article class="card card7">
+          <img src="./assets/calendar-2021-double.jpg" alt="Photo" />
+          <div class="text">       
+          </div>
+        </article>
+
+        <article class="card card8">
+          <img src="./assets/honeybees.jpg" alt="Photo" />
+          <div class="text">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <h2>HOW YOU CAN HELP</h2>
+
+    <section class="section" id="section--3">
+      <div class="turtles">
+        <article class="turtle card9">
+          <img src="./assets/turtle.jpg" alt="Photo" />
+          <div class="text">
+        </article>
+
+        <article class="turtle card10">
+          <img src="./assets/shutterstock.jpg" alt="Photo" />
+          <div class="text">    
+          </div>
+        </article>
+
+      </div>
+    </section>        
+
+  <div class="footer">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <button class="button">LOG IN</button>
+    <hr>
+    <p class="about2">ABOUT</p>
+    <p class="career">Careers</p>
+    <p class="contact">Contact</p>
+    <p class="news">News & Press</p>
+    <p class="help2">Help</p>
+  </div>
+
+  <section class="section" id="section--4"></section>
+  <div class="footer2">
+    <img
+          src="./assets/deer.png"
+          alt="Deer logo"
+          class="footer__logo"
+          id="logo2"
+          designer="Igor"
+          data-version-number="3.0"
+        />
+
+    <p class="global">Global Sanctuary Fund</p><br>
+
+    <p class="street">1250 24th Street, N.W.</p><!-- <br> -->
+
+    <p class="street">Washington, DC 20037</p>
+
+    <p class="connect">CONNECT WITH US</p>
+
+    <div class="social"> 
+    <a href="http://www.facebook.com" aria-label="Facebook"
+        ><i class="fab fa-facebook fa-2x"></i>
+        </a>
+
+        <a href="http://www.twitter.com" aria-label="Twitter"
+          ><i class="fab fa-twitter fa-2x"></i
+        ></a>
+
+        <a href="http://www.instagram.com" aria-label="Instagram"
+          ><i class="fab fa-instagram fa-2x"></i
+        ></a>
+        <a href="http://www.youtube.com" aria-label="Youtube"
+          ><i class="fab fa-youtube fa-2x"></i
+        ></a>
+        <a href="http://www.rss.com" aria-label="RSS"
+          ><i class="fa fa-rss fa-2x"></i
+        ></a>
+    </div>
+
+    <p class="footer__gsf">Global Sanctuary Fund Inc. is a nonprofit, tax-exempt charitable organization <br> (tax ID number 52-16993387) under
+    section (501)(c)(3) of the Internal Revenue <br>  
+    Code. Donations are tax-deductible as allowed by law.</p>
+    
+    <div class="footer__link"> 
+      <a href="#">Site Terms</a>
+      <a href="#">Privacy Policy/Your Policy Rights</a>
+      <a href="#">State Disclosures</a>
+    </div>
+
+    <p class="footer__copyright">&copy; 2021 Global Sanctuary Fund. GSF&reg; and &copy;1986 Deer
+    Symbol are owned by GSF. All rights reserved.</p>
+  </div>
+  </section>
+
+  </body>
+</html>
